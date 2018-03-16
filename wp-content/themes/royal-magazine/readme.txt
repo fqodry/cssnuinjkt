@@ -3,8 +3,8 @@
 Contributors: ThemeInWP
 
 Requires at least: 4.0
-Tested up to: 4.8.3
-Stable tag: 1.0.5
+Tested up to: 4.9.4
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -101,6 +101,14 @@ License: Open Font License
 
 
 == Changelog ==
+
+= 1.1.1 - Mar 10 2018 =
+=Fixed author name issue=
+
+= 1.1.0 - Dec 28 2017 =
+=Fixed one click demo install=
+=Social tags on author widget modified=
+
 
 = 1.0.5 - Nov 5 2017 =
 =Fixed the date issue on off canvas panel=

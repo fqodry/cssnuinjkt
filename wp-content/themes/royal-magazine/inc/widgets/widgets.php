@@ -295,6 +295,7 @@ if (!class_exists('Royal_Magazine_widget_style_2')) :
                                         </div>
                                         <div class="item-metadata post-author small-font">
                                             <span class="author-avatar">
+                                                <?php $author_id = $post->post_author; ?>
                                                 <?php $post_author_url = get_the_author_meta('user_email'); ?>
                                                 <?php if (!empty($post_author_url)) : ?>
                                                     <a href="<?php echo esc_url(get_author_posts_url($author_id)) ?>">
@@ -358,6 +359,7 @@ if (!class_exists('Royal_Magazine_widget_style_2')) :
                                         </div>
                                         <div class="item-metadata post-author small-font">
                                             <span class="author-avatar">
+                                                <?php $author_id = $post->post_author; ?>
                                                 <?php $post_author_url = get_the_author_meta('user_email'); ?>
                                                 <?php if (!empty($post_author_url)) : ?>
                                                     <a href="<?php echo esc_url(get_author_posts_url($author_id)) ?>">
@@ -947,13 +949,13 @@ if (!class_exists('Royal_Magazine_Author_Post_widget')) :
                 </div> <!-- /#author-details -->
                 <div class="author-social">
                     <?php if ( ! empty( $params['url-fb'] ) ) { ?>
-                        <a href="<?php echo esc_url($params['url-fb']); ?>"><i class="meta-icon ion-social-facebook"></i></a>
+                        <a href="<?php echo esc_url($params['url-fb']); ?>" target="_blank"><i class="meta-icon ion-social-facebook"></i></a>
                     <?php } ?>
                     <?php if ( ! empty( $params['url-tw'] ) ) { ?>
-                        <a href="<?php echo esc_url($params['url-tw']); ?>"><i class="meta-icon ion-social-twitter"></i></a>
+                        <a href="<?php echo esc_url($params['url-tw']); ?>" target="_blank"><i class="meta-icon ion-social-twitter"></i></a>
                     <?php } ?>
                     <?php if ( ! empty( $params['url-gp'] ) ) { ?>
-                        <a href="<?php echo esc_url($params['url-gp']); ?>"><i class="meta-icon ion-social-googleplus"></i></a>
+                        <a href="<?php echo esc_url($params['url-gp']); ?>" target="_blank"><i class="meta-icon ion-social-googleplus"></i></a>
                     <?php } ?>
                 </div>
             </div>

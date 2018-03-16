@@ -50,6 +50,14 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version 1.2.5 - 2018-03-15
+* Fix - Flex issue on safari
+
+= Version 1.2.4 - 2018-02-27 =
+* Fix - Header layout ( Main Header Area Display ) design issue
+* Fix - Touchscreen submenu double click issue in small devices
+* Tweaks - Introduce customizer live preview and selective refresh feature.
+
 = Version 1.2.3 - 2017-12-12 =
 * Added - Scrollbar for fixed better responsive menu if overflow.
 * Tweaks - Touch screen accessible submenu

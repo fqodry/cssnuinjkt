@@ -4,7 +4,7 @@ Theme URI: https://themeinwp.com/theme/royal-magazine
 Author: ThemeInWP
 Author URI: https://www.themeinwp.com/
 Description: Take your magazine/news site to the Next Level with Royal Magazine. With One Click Demo Importer Royal Magazine is a feature-rich and fully responsive magazine/news WordPress theme, suitable for almost any niche. Built with Bootstrap3 framework, Royal Magazine is Engineered for the pros and Crafted for the up-and-comers. With fully responsive design Royal Magazine is tested on all major handheld devices. Unlimited possibilities & flexible Layouts. Don’t wait – Launch Your Start-up Now! with Royal Magazine. Our theme is SEO Optimized and also supports Elementor plugin. View Live Demo : https://demo.themeinwp.com/royal-magazine/ and Visit Theme Documentation: https://docs.themeinwp.com/royal-magazine/
-Version: 1.0.5
+Version: 1.1.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: royal-magazine
@@ -3398,6 +3398,10 @@ span.comments-link {
     text-align: right;
 }
 
+.slider-nav .slick-dots {
+    top: 50px;
+}
+
 .slick-dots li {
     position: relative;
     display: inline-block;
@@ -3583,6 +3587,18 @@ span.comments-link {
 
     .slider-figcaption {
         margin-top: 0;
+    }
+
+    .slide-title {
+        font-size: 1.35rem;
+    }
+
+    .twp-meta-categories .post-categories li a {
+        font-size: 14px;
+    }
+
+    .twp-meta-categories a {
+        margin: 2px;
     }
 }
 
@@ -3852,6 +3868,29 @@ span.comments-link {
 #footer-menu li {
     display: inline-block;
     padding-right: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    #footer-menu {
+        text-align: left;
+        margin: 15px auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #footer-menu li {
+        display: block;
+        border-bottom: 1px solid #212121;
+    }
+
+    #footer-menu li:first-child {
+        border-top: 1px solid #212121;
+    }
+
+    #footer-menu li a {
+        display: block;
+        padding: 5px 0;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -5574,17 +5613,6 @@ body.home.blog .inner-banner {
     visibility: visible;
 }
 
-@media only screen and (max-width: 640px) {
-    .top-bar:before {
-        left: 0;
-        top: 40px;
-    }
-
-    .news {
-        width: 100%;
-    }
-}
-
 figure,
 figcaption {
     outline: none !important;
@@ -5623,6 +5651,50 @@ article.post,
     display: inline-block;
     float: right;
     transform: rotate(45deg);
+}
+
+.custom-background .top-header .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .news {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .news {
+        width: 35%;
+    }
+    .site-branding .site-title {
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .top-bar:before {
+        left: 0;
+        top: 40px;
+    }
+
+    .news {
+        width: 100%;
+    }
+
+    .news > span {
+        margin-left: 0;
+    }
+
+    .twp-date {
+        width: 100%;
+        text-align: center;
+        right: inherit;
+    }
+    .site-branding .site-title {
+        font-size: 38px;
+    }
 }
 
 /*--------------------------------------------------------------

@@ -203,6 +203,10 @@ endif;
 add_action( 'tgmpa_register', 'royal_magazine_recommended_plugins' );
 
 function royal_magazine_check_other_plugin() {
+
+// Disable PT branding.
+add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );
+
   // check for plugin using plugin name
   if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {
     //plugin is activated
